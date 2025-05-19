@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kartu Nama - Gangga Arya Fatiyan</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('https://yt3.googleusercontent.com/5AKniedc5j-ozznrf-4gK1zQ83RTVat7lwhXtn_c-L2cer52q75mqpzxy0tO9itUzvzU42i0dno=s900-c-k-c0x00ffffff-no-rj') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      backdrop-filter: blur(5px);
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .card h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .btn {
+      background: #ff0055;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #ff3366;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 500px) {
+      .card {
+        padding: 20px;
+      }
+      .btn {
+        padding: 8px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Gangga Arya Fatiyan</h1>
+    <p><strong>Tempat & Tanggal Lahir:</strong> Malang, 30-12-2010</p>
+    <p><strong>Hobi:</strong> Coding, dll</p>
+    <p><strong>No. Telp:</strong> 085855962331</p>
+    <div class="buttons">
+      <a href="https://t.me/g4nggaa" target="_blank" class="btn">Telegram</a>
+      <a href="https://instagram.com/ganggaaryafatiyan" target="_blank" class="btn">Instagram</a>
+      <a href="https://github.com/G4NGGAAA" target="_blank" class="btn">GitHub</a>
+      <a href="tel:085855962331" class="btn">Telepon</a>
+    </div>
+  </div>
+
+  <!-- Audio disematkan langsung sebagai Base64 -->
+  <audio autoplay loop>
+    <source src="data:audio/mpeg;base64,{{BASE64_AUDIO_HERE}}" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+</body>
+</html>
